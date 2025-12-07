@@ -78,6 +78,17 @@ const experienceData = [
 
 const projectsData = [
     {
+        title: "Luxury Motors Portfolio",
+        type: "Web App",
+        description: {
+            es: "Sitio web moderno para concesionario de autos de lujo con visualizador 3D interactivo, slider de vehículos destacados, y sistema de cotización. Desarrollado con React, Three.js y Tailwind CSS.",
+            en: "Modern website for luxury car dealership with interactive 3D viewer, featured vehicles slider, and quote system. Developed with React, Three.js and Tailwind CSS."
+        },
+        links: [
+            { text: { es: "Ver Prototipo", en: "View Prototype" }, url: "https://luxury-motors-portfolio.vercel.app/" }
+        ]
+    },
+    {
         title: "Tic-Tac-Toe Imbatible",
         type: "Web App",
         description: {
