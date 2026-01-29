@@ -78,28 +78,6 @@ const experienceData = [
 
 const projectsData = [
     {
-        title: "Monitor Dólar Venezuela",
-        type: "Web App",
-        description: {
-            es: "Aplicación web para monitorear el precio del dólar en Venezuela en tiempo real. Diseño moderno y funcional con Next.js y Tailwind CSS.",
-            en: "Web application to monitor the dollar price in Venezuela in real time. Modern and functional design with Next.js and Tailwind CSS."
-        },
-        links: [
-            { text: { es: "Ver Proyecto", en: "View Project" }, url: "https://monitor-dolar-venezuela-yxsa.vercel.app/" }
-        ]
-    },
-    {
-        title: "TuMobiliaria",
-        type: "Web App",
-        description: {
-            es: "Plataforma web moderna para búsqueda y gestión de propiedades inmobiliarias. Desarrollado con Vue 3, Vite y Tailwind CSS.",
-            en: "Modern web platform for real estate property search and management. Developed with Vue 3, Vite and Tailwind CSS."
-        },
-        links: [
-            { text: { es: "Ver Proyecto", en: "View Project" }, url: "https://tumobiliaria.vercel.app/" }
-        ]
-    },
-    {
         title: "Luxury Motors Portfolio",
         type: "Web App",
         description: {
