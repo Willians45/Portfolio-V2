@@ -78,6 +78,28 @@ const experienceData = [
 
 const projectsData = [
     {
+        title: "Monitor Dólar",
+        type: "Web App",
+        description: {
+            es: "Aplicación web para monitorear en tiempo real el precio del dólar en Venezuela. Interfaz intuitiva con datos actualizados de diferentes casas de cambio.",
+            en: "Web application to monitor the dollar price in Venezuela in real time. Intuitive interface with updated data from different exchange houses."
+        },
+        links: [
+            { text: { es: "Ver Demo", en: "View Demo" }, url: "https://monitor-dolar-venezuela-yxsa.vercel.app/" }
+        ]
+    },
+    {
+        title: "TuMobiliaria",
+        type: "Web App",
+        description: {
+            es: "Plataforma inmobiliaria moderna para búsqueda y visualización de propiedades. Diseño responsive con filtros avanzados y galería de imágenes.",
+            en: "Modern real estate platform for property search and viewing. Responsive design with advanced filters and image gallery."
+        },
+        links: [
+            { text: { es: "Ver Demo", en: "View Demo" }, url: "https://tumobiliaria.vercel.app/" }
+        ]
+    },
+    {
         title: "Luxury Motors Portfolio",
         type: "Web App",
         description: {
