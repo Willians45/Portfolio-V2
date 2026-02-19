@@ -47,7 +47,10 @@ const experienceData = [
             { name: "Wow Multibarras", url: "https://wowmultibarras.com/" },
             { name: "Cortinas TJ", url: "https://cortinastj.cl/" },
             { name: "Quebrada Lodge Papudo", url: "https://quebradalodgepapudo.cl/" },
-            { name: "Arpideco", url: "https://arpideco.cl/" }
+            { name: "Arpideco", url: "https://arpideco.cl/" },
+            { name: "FK Morales Tours", url: "https://fkmoralestours.com/" },
+            { name: "La Media Caja", url: "https://lamediacaja.cl/" },
+            { name: "KillerMax", url: "https://killermax.cl/" }
         ]
     },
     {
