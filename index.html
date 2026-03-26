@@ -31,6 +31,9 @@
                 <li data-tab="experience" onclick="closeMobileMenu()">
                     <i class="fa-solid fa-briefcase"></i> <span>Experiencia</span>
                 </li>
+                <li data-tab="webs" onclick="closeMobileMenu()">
+                    <i class="fa-solid fa-globe"></i> <span>Webs</span>
+                </li>
                 <li data-tab="projects" onclick="closeMobileMenu()">
                     <i class="fa-solid fa-code"></i> <span>Proyectos</span>
                 </li>
@@ -80,14 +83,34 @@
             </div>
 
             <div id="experience" class="tab-content">
-                <h2 class="section-title" data-i18n="experienceTitle">Experiencia Laboral</h2>
+                <h2 class="section-title" data-i18n="experienceTitle">Experiencia</h2>
                 <div class="timeline" id="experience-list">
                     <!-- JS will populate this -->
                 </div>
             </div>
 
+            <div id="webs" class="tab-content">
+                <h2 class="section-title" data-i18n="websTitle">Webs</h2>
+                <div class="web-filters" id="web-category-filters">
+                    <!-- JS will populate categories -->
+                </div>
+                <div class="webs-grid" id="webs-list">
+                    <!-- JS will populate this -->
+                </div>
+            </div>
+
             <div id="projects" class="tab-content">
-                <h2 class="section-title" data-i18n="projectsTitle">Proyectos Personales</h2>
+                <h2 class="section-title" data-i18n="projectsTitle">Proyectos</h2>
+                <div class="category-slider">
+                    <div class="category-tabs">
+                        <button class="category-tab active" data-category="web-apps" onclick="switchProjectCategory('web-apps')">
+                            <i class="fa-solid fa-globe"></i> Web Apps
+                        </button>
+                        <button class="category-tab" data-category="plugins" onclick="switchProjectCategory('plugins')">
+                            <i class="fa-solid fa-plug"></i> Plugins PHP
+                        </button>
+                    </div>
+                </div>
                 <div class="projects-grid" id="projects-list">
                     <!-- JS will populate this -->
                 </div>

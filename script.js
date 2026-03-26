@@ -6,14 +6,30 @@ const translations = {
         bio: "Transformo ideas en experiencias digitales modernas y funcionales. Especializado en crear sitios web de alto rendimiento con enfoque en diseño, SEO y experiencia de usuario.",
         viewProjects: "Ver Proyectos",
         viewExperience: "Mi Experiencia",
-        experienceTitle: "Experiencia Laboral",
-        projectsTitle: "Proyectos Personales",
+        experienceTitle: "Experiencia",
+        projectsTitle: "Proyectos",
         contactTitle: "Contáctame",
         contactText: "¿Tienes un proyecto en mente? ¡Hablemos!",
         navHome: "Inicio",
         navExperience: "Experiencia",
+        navWebs: "Webs",
         navProjects: "Proyectos",
-        navContact: "Contacto"
+        navContact: "Contacto",
+        websTitle: "Webs",
+        viewSite: { es: "Ver sitio", en: "View site" },
+        viewProject: { es: "Ver proyecto", en: "View project" },
+        webCategories: {
+            "Diseño de Interiores": { es: "Diseño de Interiores", en: "Interior Design" },
+            "Seguridad": { es: "Seguridad", en: "Security" },
+            "Soldaduras": { es: "Soldaduras", en: "Welding" },
+            "Turismo": { es: "Turismo", en: "Tourism" },
+            "Energía": { es: "Energía", en: "Energy" },
+            "Fumigación": { es: "Fumigación", en: "Fumigation" },
+            "Arreglos": { es: "Arreglos", en: "Arrangements" },
+            "Bienes Raíces": { es: "Bienes Raíces", en: "Real Estate" },
+            "Equipo de Gimnasio": { es: "Equipo de Gimnasio", en: "Gym Equipment" },
+            "All": { es: "Todas", en: "All" }
+        }
     },
     en: {
         greeting: "Hi, I'm",
@@ -23,13 +39,29 @@ const translations = {
         viewProjects: "View Projects",
         viewExperience: "My Experience",
         experienceTitle: "Work Experience",
-        projectsTitle: "Personal Projects",
+        projectsTitle: "Projects",
         contactTitle: "Contact Me",
         contactText: "Have a project in mind? Let's talk!",
         navHome: "Home",
         navExperience: "Experience",
+        navWebs: "Webs",
         navProjects: "Projects",
-        navContact: "Contact"
+        navContact: "Contact",
+        websTitle: "Websites",
+        viewSite: { es: "Ver sitio", en: "View site" },
+        viewProject: { es: "Ver proyecto", en: "View project" },
+        webCategories: {
+            "Diseño de Interiores": { es: "Diseño de Interiores", en: "Interior Design" },
+            "Seguridad": { es: "Seguridad", en: "Security" },
+            "Soldaduras": { es: "Soldaduras", en: "Welding" },
+            "Turismo": { es: "Turismo", en: "Tourism" },
+            "Energía": { es: "Energía", en: "Energy" },
+            "Fumigación": { es: "Fumigación", en: "Fumigation" },
+            "Arreglos": { es: "Arreglos", en: "Arrangements" },
+            "Bienes Raíces": { es: "Bienes Raíces", en: "Real Estate" },
+            "Equipo de Gimnasio": { es: "Equipo de Gimnasio", en: "Gym Equipment" },
+            "All": { es: "Todas", en: "All" }
+        }
     }
 };
 
@@ -41,17 +73,7 @@ const experienceData = [
         description: {
             es: "Desarrollo y mantenimiento de sitios web corporativos y e-commerce utilizando WordPress. Implementación de diseños personalizados y optimización de rendimiento.",
             en: "Development and maintenance of corporate and e-commerce websites using WordPress. Implementation of custom designs and performance optimization."
-        },
-        projects: [
-            { name: "Cerco Vivo", url: "https://cercovivo.cl/" },
-            { name: "Wow Multibarras", url: "https://wowmultibarras.com/" },
-            { name: "Cortinas TJ", url: "https://cortinastj.cl/" },
-            { name: "Quebrada Lodge Papudo", url: "https://quebradalodgepapudo.cl/" },
-            { name: "Arpideco", url: "https://arpideco.cl/" },
-            { name: "FK Morales Tours", url: "https://fkmoralestours.com/" },
-            { name: "La Media Caja", url: "https://lamediacaja.cl/" },
-            { name: "KillerMax", url: "https://killermax.cl/" }
-        ]
+        }
     },
     {
         company: "Magnova Agency",
@@ -60,12 +82,7 @@ const experienceData = [
         description: {
             es: "Desarrollo de sitios web en WordPress y optimización SEO. Colaboración directa con clientes para definir requerimientos y entregar soluciones a medida.",
             en: "WordPress website development and SEO optimization. Direct collaboration with clients to define requirements and deliver custom solutions."
-        },
-        projects: [
-            { name: "Magnova Agency", url: "https://magnovaagency.com/" },
-            { name: "My Home Punta Cana", url: "https://www.myhomepuntacana.com/" },
-            { name: "Punta Cana Consulting Group", url: "https://puntacanaconsultinggroup.com/" }
-        ]
+        }
     },
     {
         company: "Lotería De Hoy",
@@ -74,92 +91,138 @@ const experienceData = [
         description: {
             es: "Diseño visual en Figma y maquetación HTML de plantillas de email marketing responsive.",
             en: "Visual design in Figma and HTML coding of responsive email marketing templates."
-        },
-        projects: []
+        }
     }
 ];
 
-const projectsData = [
+const websData = [
     {
-        title: "Monitor Dólar",
-        type: "Web App",
-        description: {
-            es: "Aplicación web para monitorear en tiempo real el precio del dólar en Venezuela. Interfaz intuitiva con datos actualizados de diferentes casas de cambio.",
-            en: "Web application to monitor the dollar price in Venezuela in real time. Intuitive interface with updated data from different exchange houses."
-        },
-        links: [
-            { text: { es: "Ver Demo", en: "View Demo" }, url: "https://monitor-dolar-venezuela-yxsa.vercel.app/" }
-        ]
+        title: "ArpiDeco",
+        image: "Webs/ArpiDeco.png",
+        category: "Diseño de Interiores",
+        url: "https://arpideco.cl/"
     },
     {
-        title: "TuMobiliaria",
-        type: "Web App",
-        description: {
-            es: "Plataforma inmobiliaria moderna para búsqueda y visualización de propiedades. Diseño responsive con filtros avanzados y galería de imágenes.",
-            en: "Modern real estate platform for property search and viewing. Responsive design with advanced filters and image gallery."
-        },
-        links: [
-            { text: { es: "Ver Demo", en: "View Demo" }, url: "https://tumobiliaria.vercel.app/" }
-        ]
+        title: "CercoVivo",
+        image: "Webs/CercoVivo.png",
+        category: "Seguridad",
+        url: "https://cercovivo.cl/"
     },
     {
-        title: "Luxury Motors Portfolio",
-        type: "Web App",
-        description: {
-            es: "Sitio web moderno para concesionario de autos de lujo con visualizador 3D interactivo, slider de vehículos destacados, y sistema de cotización. Desarrollado con React, Three.js y Tailwind CSS.",
-            en: "Modern website for luxury car dealership with interactive 3D viewer, featured vehicles slider, and quote system. Developed with React, Three.js and Tailwind CSS."
-        },
-        links: [
-            { text: { es: "Ver Prototipo", en: "View Prototype" }, url: "https://luxury-motors-portfolio.vercel.app/" }
-        ]
+        title: "CortinasTJ",
+        image: "Webs/CortinasTJ.png",
+        category: "Soldaduras",
+        url: "https://cortinastj.cl/"
     },
     {
-        title: "Tic-Tac-Toe Imbatible",
-        type: "Web App",
-        description: {
-            es: "Juego de Tic-Tac-Toe con algoritmo Minimax para una IA invencible. Desarrollado con HTML, CSS y JavaScript puro.",
-            en: "Tic-Tac-Toe game with Minimax algorithm for an invincible AI. Developed with pure HTML, CSS, and JavaScript."
-        },
-        links: [
-            { text: { es: "Ver Código", en: "View Code" }, url: "https://github.com/Willians45/TicTacToe?tab=readme-ov-file" }
-        ]
+        title: "FK Morales Tours",
+        image: "Webs/FK Morales Tours.png",
+        category: "Turismo",
+        url: "https://fkmoralestours.com/"
     },
     {
-        title: "Appbook Prototype",
-        type: "UI/UX Design",
-        description: {
-            es: "Diseño y prototipado de alta fidelidad para una aplicación de lectura de libros.",
-            en: "High-fidelity design and prototyping for a book reading application."
-        },
-        links: [
-            { text: { es: "Ver Prototipo", en: "View Prototype" }, url: "https://www.figma.com/proto/fAAaZBi3dD2VfXtUJjeYLd/Book-App?node-id=9-293&t=0g6LZawC0UK6Etos-1&starting-point-node-id=1%3A2" }
-        ]
+        title: "GreenElectric",
+        image: "Webs/GreenElectric.png",
+        category: "Energía",
+        url: "https://greenelectricchile.cl/"
     },
     {
-        title: "Landing Page Concept",
-        type: "UI/UX Design",
-        description: {
-            es: "Diseño moderno de landing page con versiones desktop y mobile.",
-            en: "Modern landing page design with desktop and mobile versions."
-        },
-        links: [
-            { text: { es: "Ver Prototipo", en: "View Prototype" }, url: "https://www.figma.com/proto/shwi79n67Ij4UENyZq1yrz/Landing---K?node-id=47-146&node-type=CANVAS&t=F6kSmbeP88hkFZRr-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" }
-        ]
+        title: "KillerMax",
+        image: "Webs/KillerMax.png",
+        category: "Fumigación",
+        url: "https://killermax.cl/"
     },
     {
-        title: "Email Template",
-        type: "Email Design",
-        description: {
-            es: "Plantilla de email marketing moderna y responsive.",
-            en: "Modern and responsive email marketing template."
-        },
-        links: [
-            { text: { es: "Ver Diseño", en: "View Design" }, url: "https://drive.google.com/drive/folders/1mu4Ng-KQ4cHrGvXvA8-QVJcrpjGPgzlQ" }
-        ]
+        title: "La Media Caja",
+        image: "Webs/La Media Caja.png",
+        category: "Arreglos",
+        url: "https://lamediacaja.cl/"
+    },
+    {
+        title: "My Home Punta Cana",
+        image: "Webs/My Home Punta Cana.png",
+        category: "Bienes Raíces",
+        url: "https://myhomepuntacana.com/"
+    },
+    {
+        title: "Punta Cana Consulting Group",
+        image: "Webs/Punta Cana Consulting Group.png",
+        category: "Bienes Raíces",
+        url: "https://puntacanaconsultinggroup.com/"
+    },
+    {
+        title: "Quebrada Lodge",
+        image: "Webs/Quebrada Lodge.png",
+        category: "Turismo",
+        url: "https://quebradalodgepapudo.cl/"
+    },
+    {
+        title: "Ruta Épica",
+        image: "Webs/Ruta Épica.png",
+        category: "Turismo",
+        url: "https://rutaepica.cl/test/"
+    },
+    {
+        title: "WowMultibarras",
+        image: "Webs/Wow Multibarras.png",
+        category: "Equipo de Gimnasio",
+        url: "https://wowmultibarras.com/"
     }
 ];
+
+const projectsData = {
+    "web-apps": [
+        {
+            title: "Monitor Dólar",
+            image: "Proyectos/Web Apps/Monitor Dólar.png",
+            description: {
+                es: "**Aplicación web de monitorización financiera** en tiempo real del tipo de cambio dólar/bolívar venezolano.\n\n**Características principales:**\n• Actualización automática cada 30 segundos\n• Gráficos interactivos con historial de precios\n• Notificaciones personalizables para umbrales de cambio\n\n**Tecnologías utilizadas:** React.js, Chart.js, API REST, PWA",
+                en: "**Real-time financial monitoring web application** for USD/Venezuelan bolívar exchange rate.\n\n**Key features:**\n• Auto-refresh every 30 seconds\n• Interactive charts with price history\n• Customizable notifications for change thresholds\n\n**Technologies used:** React.js, Chart.js, REST API, PWA"
+            },
+            url: "https://monitor-dolar-venezuela.vercel.app/"
+        },
+        {
+            title: "Tu Mobiliaria",
+            image: "Proyectos/Web Apps/TuMobiliaria.png",
+            description: {
+                es: "**Plataforma inmobiliaria completa** para gestión de propiedades y clientes.\n\n**Características principales:**\n• Catálogo de propiedades con filtros avanzados\n• Sistema de citas y visitas virtuales\n• Panel de administración intuitivo\n\n**Tecnologías utilizadas:** Vue.js, Node.js, MongoDB, Google Maps API",
+                en: "**Complete real estate platform** for property and client management.\n\n**Key features:**\n• Property catalog with advanced filters\n• Appointment and virtual tour system\n• Intuitive admin dashboard\n\n**Technologies used:** Vue.js, Node.js, MongoDB, Google Maps API"
+            },
+            url: "https://tumobiliaria.vercel.app/"
+        },
+        {
+            title: "Luxury Motors",
+            image: "Proyectos/Web Apps/Luxury Motors.png",
+            description: {
+                es: "**Showroom digital de vehículos de lujo** con experiencia de compra premium.\n\n**Características principales:**\n• Galería de imágenes 360° de vehículos\n• Configurador de autos personalizado\n• Sistema de financiamiento integrado\n\n**Tecnologías utilizadas:** Next.js, Three.js, Stripe API, PostgreSQL",
+                en: "**Digital luxury vehicle showroom** with premium buying experience.\n\n**Key features:**\n• 360° vehicle image gallery\n• Custom car configurator\n• Integrated financing system\n\n**Technologies used:** Next.js, Three.js, Stripe API, PostgreSQL"
+            },
+            url: "https://luxury-motors-portfolio.vercel.app/"
+        }
+    ],
+    "plugins": [
+        {
+            title: "Simple Project Accordeon",
+            description: {
+                es: "**Plugin WordPress para gestión de proyectos** con diseño acordeón interactivo.\n\n**Características principales:**\n• Creación ilimitada de proyectos\n• Diseño acordeón animado y responsive\n• Personalización de colores y estilos\n\n**Tecnologías:** PHP, WordPress API, jQuery, CSS3",
+                en: "**WordPress plugin for project management** with interactive accordion design.\n\n**Key features:**\n• Unlimited project creation\n• Animated responsive accordion design\n• Color and style customization\n\n**Technologies:** PHP, WordPress API, jQuery, CSS3"
+            },
+            url: "https://github.com/Willians45/simple-project-accordeon"
+        },
+        {
+            title: "Portfolio Styled",
+            description: {
+                es: "**Plugin WordPress para portafolios profesionales** con múltiples layouts.\n\n**Características principales:**\n• 4 diseños de portafolio diferentes\n• Sistema de filtrado por categorías\n• Modal lightbox para proyectos\n\n**Tecnologías:** PHP, WordPress Customizer, AJAX, Lightbox2",
+                en: "**WordPress plugin for professional portfolios** with multiple layouts.\n\n**Key features:**\n• 4 different portfolio designs\n• Category-based filtering system\n• Project modal lightbox\n\n**Technologies:** PHP, WordPress Customizer, AJAX, Lightbox2"
+            },
+            url: "https://github.com/Willians45/Portfolio-styled"
+        }
+    ]
+};
 
 let currentLang = 'es';
+let currentProjectCategory = 'web-apps';
+let currentWebCategory = 'All';
 
 function setLanguage(lang) {
     currentLang = lang;
@@ -182,11 +245,14 @@ function setLanguage(lang) {
     const navItems = document.querySelectorAll('.nav-links li span');
     navItems[0].textContent = translations[lang].navHome;
     navItems[1].textContent = translations[lang].navExperience;
-    navItems[2].textContent = translations[lang].navProjects;
-    navItems[3].textContent = translations[lang].navContact;
+    navItems[2].textContent = translations[lang].navWebs;
+    navItems[3].textContent = translations[lang].navProjects;
+    navItems[4].textContent = translations[lang].navContact;
 
     // Re-render dynamic content
     renderExperience();
+    renderWebFilters();
+    renderWebs();
     renderProjects();
 }
 
@@ -198,12 +264,48 @@ function renderExperience() {
             <h3 class="timeline-role">${item.role[currentLang]}</h3>
             <h4 class="timeline-company">${item.company}</h4>
             <p class="timeline-desc">${item.description[currentLang]}</p>
-            <div class="project-links">
-                ${item.projects.map(proj => `
-                    <a href="${proj.url}" target="_blank" class="project-tag">
-                        <i class="fa-solid fa-link"></i> ${proj.name}
-                    </a>
-                `).join('')}
+        </div>
+    `).join('');
+}
+
+function renderWebFilters() {
+    const container = document.getElementById('web-category-filters');
+    if (!container) return;
+
+    // Get unique categories from websData
+    const categories = ['All', ...new Set(websData.map(item => item.category))];
+
+    container.innerHTML = categories.map(cat => `
+        <button class="filter-btn ${currentWebCategory === cat ? 'active' : ''}" 
+                onclick="filterWebs('${cat}')">
+            ${translations[currentLang].webCategories[cat][currentLang]}
+        </button>
+    `).join('');
+}
+
+function filterWebs(category) {
+    currentWebCategory = category;
+    renderWebFilters();
+    renderWebs();
+}
+
+function renderWebs() {
+    const container = document.getElementById('webs-list');
+    const filteredWebs = currentWebCategory === 'All'
+        ? websData
+        : websData.filter(item => item.category === currentWebCategory);
+
+    container.innerHTML = filteredWebs.map(item => `
+        <div class="web-card">
+            <div class="web-card-image-container">
+                <img src="${item.image}" alt="${item.title}" class="web-card-image">
+            </div>
+            <div class="web-card-content">
+                <h3 class="web-card-title">${item.title}</h3>
+                <span class="web-card-category">${translations[currentLang].webCategories[item.category][currentLang]}</span>
+                <a href="${item.url}" target="_blank" class="web-card-link">
+                    ${translations[currentLang].viewSite[currentLang]} <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
             </div>
         </div>
     `).join('');
@@ -211,20 +313,69 @@ function renderExperience() {
 
 function renderProjects() {
     const container = document.getElementById('projects-list');
-    container.innerHTML = projectsData.map(item => `
+    const currentProjects = projectsData[currentProjectCategory] || [];
+
+    container.innerHTML = currentProjects.map(item => `
         <div class="project-card">
-            <div class="project-type">${item.type}</div>
+            ${item.image ? `<img src="${item.image}" alt="${item.title}" class="project-card-image ${item.title === 'Luxury Motors' ? 'large-mockup' : ''}">` : ''}
             <h3 class="project-title">${item.title}</h3>
-            <p class="project-desc">${item.description[currentLang]}</p>
+            <div class="project-desc">${formatDescription(item.description[currentLang])}</div>
             <div class="card-links">
-                ${item.links.map(link => `
-                    <a href="${link.url}" target="_blank" class="card-link">
-                        ${link.text[currentLang]} <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                `).join('')}
+                <a href="${item.url}" target="_blank" class="card-link">
+                    ${translations[currentLang].viewProject[currentLang]} <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
             </div>
         </div>
     `).join('');
+}
+
+function formatDescription(description) {
+    // Convert markdown-like formatting to HTML
+    let formatted = description
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\n\n/g, '</p><p>');
+
+    // Handle bullet points
+    const lines = formatted.split('\n');
+    let result = '';
+    let inList = false;
+
+    lines.forEach(line => {
+        if (line.trim().startsWith('• ')) {
+            if (!inList) {
+                result += '<ul>';
+                inList = true;
+            }
+            result += '<li>' + line.trim().substring(2) + '</li>';
+        } else {
+            if (inList) {
+                result += '</ul>';
+                inList = false;
+            }
+            result += line;
+        }
+    });
+
+    if (inList) {
+        result += '</ul>';
+    }
+
+    return '<p>' + result + '</p>';
+}
+
+function switchProjectCategory(category) {
+    currentProjectCategory = category;
+
+    // Update tab buttons
+    document.querySelectorAll('.category-tab').forEach(tab => {
+        tab.classList.remove('active');
+        if (tab.dataset.category === category) {
+            tab.classList.add('active');
+        }
+    });
+
+    // Re-render projects
+    renderProjects();
 }
 
 function switchTab(tabId) {

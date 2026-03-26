@@ -382,11 +382,199 @@ button {
     background-color: rgba(37, 99, 235, 0.2);
 }
 
+/* Webs Grid */
+.webs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+}
+
+.web-card {
+    background: var(--card-bg);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.web-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.2);
+}
+
+.web-card,
+.project-card {
+    animation: cardAppear 0.5s ease-out forwards;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.web-card-image-container {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 4px solid var(--border-color);
+    background-color: var(--bg-color);
+}
+
+.web-card-image-container::before {
+    content: '•••';
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: var(--text-muted);
+    font-size: 14px;
+    letter-spacing: 2px;
+    z-index: 2;
+    background: var(--card-bg);
+    opacity: 0.9;
+    padding: 0 5px;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+}
+
+.web-card-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    padding: 10px;
+    background-color: var(--bg-color);
+}
+
+/* Hover transform removed */
+
+.web-card-content {
+    padding: 1.5rem;
+}
+
+.web-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.web-card-category {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--primary-color);
+    background-color: rgba(37, 99, 235, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.web-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: gap 0.2s ease;
+}
+
+.web-card-link:hover {
+    gap: 0.75rem;
+}
+
+/* Web Filters */
+.web-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: rgba(37, 99, 235, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+/* Category Slider */
+.category-slider {
+    margin-bottom: 2rem;
+}
+
+.category-tabs {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.category-tab {
+    background: none;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    cursor: pointer;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-tab:hover {
+    background-color: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+}
+
+.category-tab.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.category-tab i {
+    font-size: 0.9rem;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
 }
 
 .project-card {
@@ -417,10 +605,56 @@ button {
     color: var(--text-color);
 }
 
+.project-card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: var(--bg-color);
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-card-image {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card-image.large-mockup {
+    height: 250px;
+    object-fit: cover;
+    padding: 0 2rem 2rem;
+    position: relative;
+}
+
 .project-desc {
     color: var(--text-muted);
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
+}
+
+.project-desc p {
+    margin-bottom: 1rem;
+}
+
+.project-desc p:last-child {
+    margin-bottom: 0;
+}
+
+.project-desc ul {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.project-desc li {
+    margin-bottom: 0.25rem;
+    color: var(--text-muted);
+}
+
+.project-desc strong {
+    color: var(--text-color);
+    font-weight: 600;
 }
 
 .card-links {
@@ -437,19 +671,6 @@ button {
 
 .card-link:hover {
     color: var(--primary-color);
-}
-
-/* Contact Section */
-.contact-container {
-    background: var(--card-bg);
-    padding: 3rem;
-    border-radius: 1rem;
-    box-shadow: var(--shadow);
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    /* Centered as requested */
-    border: 1px solid var(--border-color);
 }
 
 .contact-container p {
@@ -523,7 +744,26 @@ button {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .webs-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .web-filters {
+        justify-content: center;
+    }
+
+    .category-tabs {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .category-tab {
+        justify-content: center;
     }
 
     .nav-links {
