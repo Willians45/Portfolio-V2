@@ -173,6 +173,15 @@ const websData = [
 const projectsData = {
     "web-apps": [
         {
+            title: "ATS Optimizer",
+            image: "Proyectos/Web Apps/ATS Optimizer.png",
+            description: {
+                es: "**Optimizador de CV para sistemas ATS** que procesa la información 100% en el lado del cliente garantizando privacidad total.\n\n**Características principales:**\n• Extracción de texto desde PDF y OCR de vacantes con IA\n• Optimización de experiencia laboral usando metodología STAR\n• Generación de PDF minimalista de una sola columna optimizado para parsers\n\n**Tecnologías utilizadas:** React, Gemini 3 Flash, Tailwind CSS v4, Framer Motion",
+                en: "**ATS CV Optimizer** tool that processes information 100% client-side, ensuring total privacy.\n\n**Key features:**\n• PDF text extraction and job vacancy OCR with AI\n• Work experience optimization using the STAR methodology\n• Generation of minimalist single-column PDF optimized for ATS parsers\n\n**Technologies used:** React, Gemini 3 Flash, Tailwind CSS v4, Framer Motion"
+            },
+            url: "https://github.com/Willians45/ats-optimizer"
+        },
+        {
             title: "Monitor Dólar",
             image: "Proyectos/Web Apps/Monitor Dólar.png",
             description: {
