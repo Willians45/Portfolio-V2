@@ -1,9 +1,9 @@
 const translations = {
     es: {
         greeting: "Hola, soy",
-        role: "Desarrollador Web &",
-        subrole: "Especialista WordPress",
-        bio: "Transformo ideas en experiencias digitales modernas y funcionales. Especializado en crear sitios web de alto rendimiento con enfoque en diseño, SEO y experiencia de usuario.",
+        role: "Desarrollador Web",
+        subrole: "Full-Stack",
+        bio: "Desarrollador Web Full-Stack con más de 4 años de experiencia en sitios web, plataformas de e-commerce y soluciones digitales a medida. Especializado en WordPress, PHP, JavaScript y Vue, con experiencia integrando APIs REST y optimizando el rendimiento web. Trabajo en remoto con agencias internacionales, gestionando proyectos desde el análisis de requerimientos hasta el despliegue.",
         viewProjects: "Ver Proyectos",
         viewExperience: "Mi Experiencia",
         experienceTitle: "Experiencia",
@@ -28,14 +28,23 @@ const translations = {
             "Arreglos": { es: "Arreglos", en: "Arrangements" },
             "Bienes Raíces": { es: "Bienes Raíces", en: "Real Estate" },
             "Equipo de Gimnasio": { es: "Equipo de Gimnasio", en: "Gym Equipment" },
+            "SaaS": { es: "SaaS", en: "SaaS" },
+            "Marketing": { es: "Marketing", en: "Marketing" },
+            "E-commerce": { es: "E-commerce", en: "E-commerce" },
+            "Portafolio": { es: "Portafolio", en: "Portfolio" },
+            "Consultoría": { es: "Consultoría", en: "Consulting" },
+            "Gastronomía": { es: "Gastronomía", en: "Food & Drink" },
+            "Salud": { es: "Salud", en: "Health" },
+            "Inmobiliaria": { es: "Inmobiliaria", en: "Real Estate Agency" },
+            "Bienestar": { es: "Bienestar", en: "Wellness" },
             "All": { es: "Todas", en: "All" }
         }
     },
     en: {
         greeting: "Hi, I'm",
-        role: "Web Developer &",
-        subrole: "WordPress Specialist",
-        bio: "I transform ideas into modern and functional digital experiences. Specialized in creating high-performance websites with a focus on design, SEO, and user experience.",
+        role: "Full-Stack",
+        subrole: "Web Developer",
+        bio: "Full-Stack Web Developer with over 4 years of experience building websites, e-commerce platforms, and custom digital solutions. Specialized in WordPress, PHP, JavaScript, and Vue, with experience integrating REST APIs and optimizing web performance. I work remotely with international agencies, managing projects from requirements analysis through deployment.",
         viewProjects: "View Projects",
         viewExperience: "My Experience",
         experienceTitle: "Work Experience",
@@ -60,6 +69,15 @@ const translations = {
             "Arreglos": { es: "Arreglos", en: "Arrangements" },
             "Bienes Raíces": { es: "Bienes Raíces", en: "Real Estate" },
             "Equipo de Gimnasio": { es: "Equipo de Gimnasio", en: "Gym Equipment" },
+            "SaaS": { es: "SaaS", en: "SaaS" },
+            "Marketing": { es: "Marketing", en: "Marketing" },
+            "E-commerce": { es: "E-commerce", en: "E-commerce" },
+            "Portafolio": { es: "Portafolio", en: "Portfolio" },
+            "Consultoría": { es: "Consultoría", en: "Consulting" },
+            "Gastronomía": { es: "Gastronomía", en: "Food & Drink" },
+            "Salud": { es: "Salud", en: "Health" },
+            "Inmobiliaria": { es: "Inmobiliaria", en: "Real Estate Agency" },
+            "Bienestar": { es: "Bienestar", en: "Wellness" },
             "All": { es: "Todas", en: "All" }
         }
     }
@@ -67,12 +85,21 @@ const translations = {
 
 const experienceData = [
     {
-        company: "EWED",
-        role: { es: "Desarrollador WordPress", en: "WordPress Developer" },
-        period: { es: "Septiembre 2025 - Presente", en: "September 2025 - Present" },
+        company: "SNOMCODE",
+        role: { es: "Lead Full-Stack Developer", en: "Lead Full-Stack Developer" },
+        period: { es: "Mayo 2026 - Actualidad", en: "May 2026 - Present" },
         description: {
-            es: "Desarrollo y mantenimiento de sitios web corporativos y e-commerce utilizando WordPress. Implementación de diseños personalizados y optimización de rendimiento.",
-            en: "Development and maintenance of corporate and e-commerce websites using WordPress. Implementation of custom designs and performance optimization."
+            es: "Lidero el diseño técnico y el desarrollo de sitios web, aplicaciones y plataformas de comercio electrónico adaptadas a las necesidades de cada cliente. Desarrollo interfaces y funcionalidades con React, JavaScript, Tailwind CSS y PHP, integro APIs REST, bases de datos y servicios de infraestructura en la nube (Vercel y Firebase Hosting), y gestiono el ciclo de vida de los proyectos desde el análisis de requerimientos y diseño de interfaces hasta las pruebas y el despliegue en producción.",
+            en: "I lead the technical design and development of websites, applications, and e-commerce platforms tailored to each client's needs. I develop interfaces and features using React, JavaScript, Tailwind CSS, and PHP, integrate REST APIs, databases, and cloud infrastructure services (Vercel and Firebase Hosting), and manage the project lifecycle from requirements analysis and interface design to testing and production deployment."
+        }
+    },
+    {
+        company: "Ewed (Chile)",
+        role: { es: "Desarrollador Web (PHP & WordPress)", en: "Web Developer (PHP & WordPress)" },
+        period: { es: "Septiembre 2025 - Actualidad", en: "September 2025 - Present" },
+        description: {
+            es: "Desarrollo de más de 15 sitios web corporativos y plataformas de comercio electrónico con WordPress y PHP, implementando funcionalidades personalizadas, formularios dinámicos y módulos de WooCommerce adaptados a cada cliente. Resuelvo problemas de compatibilidad entre plugins y temas, y realizo auditorías técnicas de rendimiento y seguridad para identificar oportunidades de optimización.",
+            en: "Development of more than 15 corporate websites and e-commerce platforms with WordPress and PHP, implementing custom features, dynamic forms, and WooCommerce modules tailored to each client. I resolve compatibility issues between plugins and themes, and conduct technical performance and security audits to identify optimization opportunities."
         }
     },
     {
@@ -96,6 +123,96 @@ const experienceData = [
 ];
 
 const websData = [
+    {
+        title: "Nebulab",
+        image: "Webs/Muestras/nebulab.webp",
+        category: "SaaS",
+        url: "https://snomcode.lat/demos/nebulab/"
+    },
+    {
+        title: "KROMA",
+        image: "Webs/Muestras/kroma.webp",
+        category: "Marketing",
+        url: "https://snomcode.lat/demos/kroma/"
+    },
+    {
+        title: "AURA",
+        image: "Webs/Muestras/aura.webp",
+        category: "E-commerce",
+        url: "https://snomcode.lat/demos/aura/"
+    },
+    {
+        title: "Vértice",
+        image: "Webs/Muestras/vertice.webp",
+        category: "Turismo",
+        url: "https://snomcode.lat/demos/vertice/"
+    },
+    {
+        title: "Vera Solá",
+        image: "Webs/Muestras/vera-sola.webp",
+        category: "Portafolio",
+        url: "https://snomcode.lat/demos/vera-sola/"
+    },
+    {
+        title: "Axioma Consultores",
+        image: "Webs/Muestras/axioma.webp",
+        category: "Consultoría",
+        url: "https://snomcode.lat/demos/axioma/"
+    },
+    {
+        title: "Trattoria Nonna Rosa",
+        image: "Webs/Muestras/trattoria-nonna-rosa.webp",
+        category: "Gastronomía",
+        url: "https://snomcode.lat/demos/trattoria-nonna-rosa/"
+    },
+    {
+        title: "El Fogón Criollo",
+        image: "Webs/Muestras/el-fogon-criollo.webp",
+        category: "Gastronomía",
+        url: "https://snomcode.lat/demos/el-fogon-criollo/"
+    },
+    {
+        title: "Norte",
+        image: "Webs/Muestras/norte-panaderia.webp",
+        category: "Gastronomía",
+        url: "https://snomcode.lat/demos/norte-panaderia/"
+    },
+    {
+        title: "La Mordida",
+        image: "Webs/Muestras/la-mordida.webp",
+        category: "Gastronomía",
+        url: "https://snomcode.lat/demos/la-mordida/"
+    },
+    {
+        title: "Forno Rosso",
+        image: "Webs/Muestras/forno-rosso.webp",
+        category: "Gastronomía",
+        url: "https://snomcode.lat/demos/forno-rosso/"
+    },
+    {
+        title: "Anatolia",
+        image: "Webs/Muestras/anatolia.webp",
+        category: "Gastronomía",
+        url: "https://snomcode.lat/demos/anatolia/"
+    },
+    {
+        title: "Sonrisa Viva",
+        image: "Webs/Muestras/sonrisa-viva.webp",
+        category: "Salud",
+        url: "https://snomcode.lat/demos/sonrisa-viva/"
+    },
+    {
+        title: "Casa Verde",
+        image: "Webs/Muestras/casa-verde.webp",
+        category: "Inmobiliaria",
+        url: "https://snomcode.lat/demos/casa-verde/"
+    },
+    {
+        title: "Savia",
+        image: "Webs/Muestras/savia.webp",
+        category: "Bienestar",
+        url: "https://snomcode.lat/demos/savia/"
+    },
     {
         title: "ArpiDeco",
         image: "Webs/ArpiDeco.png",
